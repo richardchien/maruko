@@ -1,8 +1,11 @@
+"""
+这是奶茶用于回复没有消息主体的消息的模块。
+"""
+
 import random
 
 from nonebot import on_natural_language, NLPSession
 from nonebot.helpers import render_expression as __
-
 
 def EXPR_ACK(**kwargs):
     nick = kwargs.pop('nick', None) or '我'
